@@ -40,6 +40,19 @@ export default function Hero() {
             >
               GitHub
             </a>
+
+            <div className="flex gap-4 flex-wrap">
+
+            <a
+              href="/Shubham_Rathour_Resume.pdf"
+              download
+              className="px-6 py-3 rounded-xl border border-cyan-400 hover:bg-cyan-400/10 transition"
+            >
+              Download Resume
+            </a>
+
+</div>
+
           </div>
         </motion.div>
 
