@@ -28,10 +28,22 @@ export default function ProjectsSection() {
               <a
                 href={project.link}
                 target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 text-cyan-400"
               >
                 Live Demo <ExternalLink size={16} aria-hidden="true" />
               </a>
+
+              {project.repoUrl && (
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ml-5 inline-flex items-center gap-2 text-cyan-400"
+                >
+                  Source Code <ExternalLink size={16} aria-hidden="true" />
+                </a>
+              )}
             </div>
           ))}
         </div>
