@@ -2,6 +2,7 @@ export type Project = {
   title: string;
   description: string;
   link: string;
+  repoUrl?: string;
   imageUrl?: string;
 };
 
@@ -22,21 +23,28 @@ export type PortfolioContent = {
 
 export const defaultPortfolioContent: PortfolioContent = {
   hero: {
-    role: "Full Stack Developer",
+    role: "Frontend Engineer | React.js | Next.js",
     heading: "Hi, I'm",
     highlightedName: "Shubham",
     summary:
-      "MCA graduate and passionate Next.js developer focused on building scalable modern web applications using React, Next.js, MongoDB, and TypeScript.",
+      "Frontend Engineer with 2+ years of experience building responsive, production-ready web applications with React.js, Next.js, TypeScript, and modern frontend tooling.",
     githubUrl: "https://github.com/ShubhamRathour123",
     resumeUrl: "/Shubham_Rathour_Resume.pdf",
   },
   about: [
-    "I am a passionate Full Stack Web Developer with a strong foundation in React.js and Next.js.",
-    "I completed my MCA from Galgotias University with an 8.05 CGPA and continuously improve my skills by building modern web applications.",
-    "I have solved 250+ DSA problems across LeetCode and GeeksForGeeks focusing on problem-solving and clean coding practices.",
-    "Currently based in Dubai, UAE and actively building scalable full stack applications using modern JavaScript technologies.",
+    "I am a Frontend Engineer based in Dubai, UAE, focused on turning product requirements into responsive, polished web experiences.",
+    "At Blue Iris Trading Software LLC, I build reusable React components, data-driven dashboard screens, and guided product experiences for internal products.",
+    "My toolkit includes React.js, Next.js, TypeScript, Redux, REST APIs, Tailwind CSS, and backend technologies such as Node.js, Prisma, PostgreSQL, and MongoDB.",
+    "I hold an MCA from Galgotias University (8.05 CGPA), have solved 250+ DSA problems, and am available to start immediately.",
   ],
   projects: [
+    {
+      title: "TrueRemittance",
+      description:
+        "UAE-to-India remittance comparison platform that ranks providers by AED fees, exchange rates, and final INR payout. Built with Next.js, TypeScript, Prisma, PostgreSQL, and Tailwind CSS.",
+      link: "https://trueremittance.vercel.app/",
+      repoUrl: "https://github.com/ShubhamRathour123/trueremittance",
+    },
     {
       title: "Shopping Cart App",
       description:
@@ -59,8 +67,14 @@ export const defaultPortfolioContent: PortfolioContent = {
     "TypeScript",
     "React.js",
     "Next.js",
+    "Redux Toolkit",
+    "REST APIs",
+    "React Query",
     "MongoDB",
     "PostgreSQL",
+    "Prisma ORM",
+    "Node.js",
+    "MySQL",
     "Tailwind CSS",
     "GitHub",
     "Java",
