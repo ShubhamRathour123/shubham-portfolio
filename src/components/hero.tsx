@@ -16,15 +16,20 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-cyan-400 mb-4">{hero.role}</p>
+          <p className="mb-4 text-cyan-400">
+            {hero.heading} <span className="gradient">{hero.highlightedName}</span>
+          </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-            {hero.heading}{" "}
-            <span className="gradient">{hero.highlightedName}</span>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            {hero.role}
           </h1>
 
           <p className="text-gray-400 text-lg leading-relaxed mb-8">
             {hero.summary}
+          </p>
+
+          <p className="mb-8 inline-flex rounded-full border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-100">
+            {hero.availability}
           </p>
 
           <div className="flex gap-4 flex-wrap">
@@ -38,9 +43,19 @@ export default function Hero() {
             <a
               href={hero.githubUrl}
               target="_blank"
+              rel="noreferrer"
               className="px-6 py-3 rounded-lg border border-cyan-400 hover:bg-cyan-400/10"
             >
               GitHub
+            </a>
+
+            <a
+              href={hero.linkedInUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="px-6 py-3 rounded-lg border border-cyan-400 hover:bg-cyan-400/10"
+            >
+              LinkedIn
             </a>
 
             <a
