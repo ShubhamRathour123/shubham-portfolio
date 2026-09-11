@@ -579,6 +579,8 @@ export default function AdminDashboard() {
                                 title: "New Project",
                                 description: "Describe this project.",
                                 link: "https://",
+                                tech: [],
+                                highlights: [],
                                 imageUrl: "",
                               },
                             ],
