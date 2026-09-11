@@ -24,6 +24,28 @@ function isPortfolioContent(value: unknown): value is PortfolioContent {
   );
 }
 
+function hydrateContent(value: PortfolioContent): PortfolioContent {
+  return {
+    ...defaultPortfolioContent,
+    ...value,
+    hero: { ...defaultPortfolioContent.hero, ...value.hero },
+    projects: value.projects.map((project) => {
+      const defaultProject = defaultPortfolioContent.projects.find(
+        (item) => item.title === project.title
+      );
+
+      return {
+        ...defaultProject,
+        ...project,
+        tech: project.tech ?? defaultProject?.tech ?? [],
+        highlights: project.highlights ?? defaultProject?.highlights ?? [],
+      };
+    }),
+    skillCategories:
+      value.skillCategories ?? defaultPortfolioContent.skillCategories,
+  };
+}
+
 export function usePortfolioContent() {
   const [content, setContent] = useState<PortfolioContent>(
     defaultPortfolioContent
@@ -40,10 +62,11 @@ export function usePortfolioContent() {
             const data = await response.json();
 
             if (isPortfolioContent(data.content)) {
-              setContent(data.content);
+              const hydratedContent = hydrateContent(data.content);
+              setContent(hydratedContent);
               window.localStorage.setItem(
                 STORAGE_KEY,
-                JSON.stringify(data.content)
+                JSON.stringify(hydratedContent)
               );
               setIsLoaded(true);
               return;
@@ -57,7 +80,7 @@ export function usePortfolioContent() {
               const parsedContent = JSON.parse(storedContent);
 
               if (isPortfolioContent(parsedContent)) {
-                setContent(parsedContent);
+                  setContent(hydrateContent(parsedContent));
               }
             } catch {
               window.localStorage.removeItem(STORAGE_KEY);
