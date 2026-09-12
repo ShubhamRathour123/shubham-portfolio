@@ -15,17 +15,17 @@ export default function ProjectsSection() {
           {content.projects.map((project) => (
             <article
               key={project.title}
-              className="rounded-lg border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition hover:border-cyan-400"
+              className="rounded-lg border border-slate-200 bg-white p-8 shadow-sm shadow-slate-900/5 transition hover:border-cyan-400 hover:shadow-md dark:border-white/10 dark:bg-white/5 dark:shadow-none"
             >
               <h3 className="text-2xl font-semibold mb-4">
                 {project.title}
               </h3>
 
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <p className="mb-6 leading-relaxed text-slate-600 dark:text-gray-400">
                 {project.description}
               </p>
 
-              <ul className="mb-6 space-y-2 text-sm leading-relaxed text-gray-300">
+              <ul className="mb-6 space-y-2 text-sm leading-relaxed text-slate-700 dark:text-gray-300">
                 {project.highlights.map((highlight) => (
                   <li key={highlight} className="flex gap-2">
                     <span aria-hidden="true" className="text-cyan-300">•</span>
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
 
               <ul className="mb-6 flex flex-wrap gap-2" aria-label={`${project.title} technologies`}>
                 {project.tech.map((technology) => (
-                  <li key={technology} className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-100">
+                  <li key={technology} className="rounded-full border border-cyan-500/20 bg-cyan-50 px-3 py-1 text-xs font-medium text-cyan-800 dark:border-cyan-400/20 dark:bg-cyan-400/10 dark:text-cyan-100">
                     {technology}
                   </li>
                 ))}
@@ -72,20 +72,20 @@ export default function ProjectsSection() {
 
 function ArchitectureSnapshot() {
   return (
-    <details className="mt-8 rounded-lg border border-white/10 bg-black/20 p-5">
-      <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-white">
+    <details className="mt-8 rounded-lg border border-slate-200 bg-slate-50 p-5 dark:border-white/10 dark:bg-black/20">
+      <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-slate-900 dark:text-white">
         Architecture &amp; Code Snapshot
         <ChevronDown size={18} aria-hidden="true" className="text-cyan-300" />
       </summary>
 
       <div className="mt-5 space-y-5">
-        <pre className="overflow-x-auto rounded-md border border-white/10 bg-[#070b1c] p-4 font-mono text-xs leading-6 text-cyan-100">{`[Client Request]
+        <pre className="overflow-x-auto rounded-md border border-slate-200 bg-slate-900 p-4 font-mono text-xs leading-6 text-cyan-100 dark:border-white/10 dark:bg-[#070b1c]">{`[Client Request]
         -> [Next.js API Route]
         -> [Prisma ORM / PostgreSQL]
         -> [Rate & Fee Engine]
         -> [Ranked Payout Response]`}</pre>
 
-        <pre className="overflow-x-auto rounded-md border border-white/10 bg-[#070b1c] p-4 text-left text-xs leading-6 text-slate-200"><code>{`type RateSnapshot = {
+        <pre className="overflow-x-auto rounded-md border border-slate-200 bg-slate-900 p-4 text-left text-xs leading-6 text-slate-200 dark:border-white/10 dark:bg-[#070b1c]"><code>{`type RateSnapshot = {
   feeAed: number;
   exchangeRate: number;
 };

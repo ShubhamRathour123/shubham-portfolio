@@ -24,11 +24,11 @@ export default function Hero() {
             {hero.role}
           </h1>
 
-          <p className="text-gray-400 text-lg leading-relaxed mb-8">
+          <p className="mb-8 text-lg leading-relaxed text-slate-600 dark:text-gray-400">
             {hero.summary}
           </p>
 
-          <p className="mb-8 inline-flex rounded-full border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-100">
+          <p className="mb-8 inline-flex rounded-full border border-cyan-500/30 bg-cyan-50 px-4 py-2 text-sm font-semibold text-cyan-800 dark:border-cyan-400/40 dark:bg-cyan-400/10 dark:text-cyan-100">
             {hero.availability}
           </p>
 
@@ -44,7 +44,7 @@ export default function Hero() {
               href={hero.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="px-6 py-3 rounded-lg border border-cyan-400 hover:bg-cyan-400/10"
+              className="rounded-lg border border-cyan-500 px-6 py-3 font-medium transition hover:bg-cyan-50 dark:border-cyan-400 dark:hover:bg-cyan-400/10"
             >
               GitHub
             </a>
@@ -53,7 +53,7 @@ export default function Hero() {
               href={hero.linkedInUrl}
               target="_blank"
               rel="noreferrer"
-              className="px-6 py-3 rounded-lg border border-cyan-400 hover:bg-cyan-400/10"
+              className="rounded-lg border border-cyan-500 px-6 py-3 font-medium transition hover:bg-cyan-50 dark:border-cyan-400 dark:hover:bg-cyan-400/10"
             >
               LinkedIn
             </a>
@@ -61,7 +61,7 @@ export default function Hero() {
             <a
               href={hero.resumeUrl}
               download
-              className="px-6 py-3 rounded-lg border border-cyan-400 hover:bg-cyan-400/10 transition"
+              className="rounded-lg border border-cyan-500 px-6 py-3 font-medium transition hover:bg-cyan-50 dark:border-cyan-400 dark:hover:bg-cyan-400/10"
             >
               Download Resume
             </a>
