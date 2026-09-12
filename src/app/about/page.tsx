@@ -10,7 +10,7 @@ export default function AboutPage() {
       <div className="max-w-5xl mx-auto">
         <h1 className="text-5xl font-bold mb-10 gradient">About Me</h1>
 
-        <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+        <div className="space-y-6 text-lg leading-relaxed text-slate-700 dark:text-gray-300">
           {content.about.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
