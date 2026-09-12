@@ -58,7 +58,7 @@ export default function ContactPage() {
             name="name"
             placeholder="Your Name"
             required
-            className="w-full p-4 rounded-2xl bg-white/5 border border-white/10 outline-none"
+            className="w-full rounded-2xl border border-slate-200 bg-white p-4 text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-white/10 dark:bg-white/5 dark:text-white"
           />
 
           <input
@@ -66,7 +66,7 @@ export default function ContactPage() {
             name="email"
             placeholder="Your Email"
             required
-            className="w-full p-4 rounded-2xl bg-white/5 border border-white/10 outline-none"
+            className="w-full rounded-2xl border border-slate-200 bg-white p-4 text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-white/10 dark:bg-white/5 dark:text-white"
           />
 
           <textarea
@@ -74,7 +74,7 @@ export default function ContactPage() {
             placeholder="Your Message"
             rows={6}
             required
-            className="w-full p-4 rounded-2xl bg-white/5 border border-white/10 outline-none"
+            className="w-full rounded-2xl border border-slate-200 bg-white p-4 text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-white/10 dark:bg-white/5 dark:text-white"
           />
 
           <button
