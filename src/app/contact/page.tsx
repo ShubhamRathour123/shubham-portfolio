@@ -40,7 +40,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="min-h-screen px-6 py-32">
+    <section className="min-h-screen bg-slate-50 px-6 py-32 text-slate-900 dark:bg-transparent dark:text-slate-100">
 
       <div className="max-w-3xl mx-auto">
 
@@ -80,13 +80,13 @@ export default function ContactPage() {
           <button
             type="submit"
             disabled={loading}
-            className="px-8 py-4 rounded-2xl bg-cyan-500 text-black font-semibold hover:scale-105 transition"
+            className="rounded-2xl bg-cyan-600 px-8 py-4 font-semibold text-white shadow-sm transition hover:scale-105 hover:bg-cyan-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-cyan-400 dark:text-slate-950 dark:hover:bg-cyan-300"
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
 
           {success && (
-            <p className="text-green-400">
+            <p className="font-medium text-emerald-700 dark:text-emerald-300">
               Message sent successfully.
             </p>
           )}
