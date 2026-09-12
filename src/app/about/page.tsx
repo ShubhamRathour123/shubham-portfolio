@@ -6,7 +6,7 @@ export default function AboutPage() {
   const { content } = usePortfolioContent();
 
   return (
-    <section className="min-h-screen px-6 py-32">
+    <section className="min-h-screen bg-slate-50 px-6 py-32 text-slate-900 dark:bg-transparent dark:text-slate-100">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-5xl font-bold mb-10 gradient">About Me</h1>
 
