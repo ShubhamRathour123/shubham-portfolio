@@ -40,7 +40,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="min-h-screen bg-slate-50 px-6 py-32 text-slate-900 dark:bg-transparent dark:text-slate-100">
+    <section className="min-h-screen bg-slate-50 px-6 py-32 text-slate-900 dark:bg-[#050816] dark:text-slate-100">
 
       <div className="max-w-3xl mx-auto">
 
@@ -58,7 +58,7 @@ export default function ContactPage() {
             name="name"
             placeholder="Your Name"
             required
-            className="w-full rounded-2xl border border-slate-200 bg-white p-4 text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-white/10 dark:bg-white/5 dark:text-white"
+            className="w-full rounded-2xl border border-slate-300 bg-white p-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-400"
           />
 
           <input
@@ -66,7 +66,7 @@ export default function ContactPage() {
             name="email"
             placeholder="Your Email"
             required
-            className="w-full rounded-2xl border border-slate-200 bg-white p-4 text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-white/10 dark:bg-white/5 dark:text-white"
+            className="w-full rounded-2xl border border-slate-300 bg-white p-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-400"
           />
 
           <textarea
@@ -74,7 +74,7 @@ export default function ContactPage() {
             placeholder="Your Message"
             rows={6}
             required
-            className="w-full rounded-2xl border border-slate-200 bg-white p-4 text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-white/10 dark:bg-white/5 dark:text-white"
+            className="w-full rounded-2xl border border-slate-300 bg-white p-4 text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/15 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-400"
           />
 
           <button
