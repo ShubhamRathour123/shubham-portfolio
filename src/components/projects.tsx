@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   const { content } = usePortfolioContent();
 
   return (
-    <section className="py-24 px-6">
+    <section className="bg-slate-50 px-6 py-24 dark:bg-transparent">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 gradient">Projects</h2>
 
@@ -17,7 +17,7 @@ export default function ProjectsSection() {
               key={project.title}
               className="rounded-lg border border-slate-200 bg-white p-8 shadow-sm shadow-slate-900/5 transition hover:border-cyan-400 hover:shadow-md dark:border-white/10 dark:bg-white/5 dark:shadow-none"
             >
-              <h3 className="text-2xl font-semibold mb-4">
+              <h3 className="mb-4 text-2xl font-semibold text-slate-900 dark:text-slate-100">
                 {project.title}
               </h3>
 
@@ -28,7 +28,7 @@ export default function ProjectsSection() {
               <ul className="mb-6 space-y-2 text-sm leading-relaxed text-slate-700 dark:text-gray-300">
                 {project.highlights.map((highlight) => (
                   <li key={highlight} className="flex gap-2">
-                    <span aria-hidden="true" className="text-cyan-300">•</span>
+                    <span aria-hidden="true" className="text-cyan-700 dark:text-cyan-300">•</span>
                     {highlight}
                   </li>
                 ))}
@@ -46,7 +46,7 @@ export default function ProjectsSection() {
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-cyan-400"
+                className="inline-flex items-center gap-2 font-semibold text-cyan-700 transition hover:text-cyan-900 dark:text-cyan-300 dark:hover:text-cyan-100"
               >
                 Live Demo <ExternalLink size={16} aria-hidden="true" />
               </a>
@@ -56,7 +56,7 @@ export default function ProjectsSection() {
                   href={project.repoUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="ml-5 inline-flex items-center gap-2 text-cyan-400"
+                  className="ml-5 inline-flex items-center gap-2 font-semibold text-cyan-700 transition hover:text-cyan-900 dark:text-cyan-300 dark:hover:text-cyan-100"
                 >
                   Source Code <ExternalLink size={16} aria-hidden="true" />
                 </a>
@@ -75,7 +75,7 @@ function ArchitectureSnapshot() {
     <details className="mt-8 rounded-lg border border-slate-200 bg-slate-50 p-5 dark:border-white/10 dark:bg-black/20">
       <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-slate-900 dark:text-white">
         Architecture &amp; Code Snapshot
-        <ChevronDown size={18} aria-hidden="true" className="text-cyan-300" />
+        <ChevronDown size={18} aria-hidden="true" className="text-cyan-700 dark:text-cyan-300" />
       </summary>
 
       <div className="mt-5 space-y-5">

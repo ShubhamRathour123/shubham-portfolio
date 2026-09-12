@@ -17,10 +17,10 @@ export default function Navbar() {
         </h1>
 
         <div className="flex items-center gap-4 text-sm font-medium sm:gap-6">
-          <Link className="transition-colors hover:text-cyan-700 dark:hover:text-cyan-300" href="/">Home</Link>
-          <Link className="transition-colors hover:text-cyan-700 dark:hover:text-cyan-300" href="/about">About</Link>
-          <Link className="transition-colors hover:text-cyan-700 dark:hover:text-cyan-300" href="/projects">Projects</Link>
-          <Link className="transition-colors hover:text-cyan-700 dark:hover:text-cyan-300" href="/contact">Contact</Link>
+          <Link className="text-slate-900 transition-colors hover:text-cyan-700 dark:text-slate-100 dark:hover:text-cyan-300" href="/">Home</Link>
+          <Link className="text-slate-900 transition-colors hover:text-cyan-700 dark:text-slate-100 dark:hover:text-cyan-300" href="/about">About</Link>
+          <Link className="text-slate-900 transition-colors hover:text-cyan-700 dark:text-slate-100 dark:hover:text-cyan-300" href="/projects">Projects</Link>
+          <Link className="text-slate-900 transition-colors hover:text-cyan-700 dark:text-slate-100 dark:hover:text-cyan-300" href="/contact">Contact</Link>
           <ThemeToggle />
         </div>
       </div>

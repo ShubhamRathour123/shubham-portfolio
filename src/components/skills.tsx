@@ -6,7 +6,7 @@ export default function Skills() {
   const { content } = usePortfolioContent();
 
   return (
-    <section className="py-24 px-6">
+    <section className="bg-slate-50 px-6 py-24 dark:bg-transparent">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 gradient">Skills</h2>
 
@@ -16,7 +16,7 @@ export default function Skills() {
               key={category.name}
               className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm shadow-slate-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:shadow-none"
             >
-              <h3 className="mb-4 text-xl font-semibold text-cyan-300">{category.name}</h3>
+              <h3 className="mb-4 text-xl font-semibold text-cyan-800 dark:text-cyan-300">{category.name}</h3>
               <ul className="flex flex-wrap gap-2" aria-label={`${category.name} skills`}>
                 {category.skills.map((skill) => (
                   <li key={skill} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-700 dark:border-white/10 dark:bg-black/20 dark:text-gray-200">

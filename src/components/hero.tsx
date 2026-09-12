@@ -9,18 +9,18 @@ export default function Hero() {
   const { hero } = content;
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
+    <section className="flex min-h-screen items-center justify-center bg-slate-50 px-6 text-slate-900 dark:bg-transparent dark:text-slate-100">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <p className="mb-4 text-cyan-400">
+          <p className="mb-4 font-medium text-cyan-700 dark:text-cyan-300">
             {hero.heading} <span className="gradient">{hero.highlightedName}</span>
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="mb-6 text-4xl font-bold leading-tight text-slate-900 md:text-6xl dark:text-slate-100">
             {hero.role}
           </h1>
 
@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="flex gap-4 flex-wrap">
             <a
               href="/projects"
-              className="px-6 py-3 rounded-lg bg-cyan-500 text-black font-semibold hover:scale-105 transition"
+              className="rounded-lg bg-cyan-600 px-6 py-3 font-semibold text-white shadow-sm transition hover:scale-105 hover:bg-cyan-700 dark:bg-cyan-400 dark:text-slate-950 dark:hover:bg-cyan-300"
             >
               View Projects
             </a>
@@ -44,7 +44,7 @@ export default function Hero() {
               href={hero.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="rounded-lg border border-cyan-500 px-6 py-3 font-medium transition hover:bg-cyan-50 dark:border-cyan-400 dark:hover:bg-cyan-400/10"
+              className="rounded-lg border border-slate-300 bg-white px-6 py-3 font-medium text-slate-900 shadow-sm transition hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
             >
               GitHub
             </a>
@@ -53,7 +53,7 @@ export default function Hero() {
               href={hero.linkedInUrl}
               target="_blank"
               rel="noreferrer"
-              className="rounded-lg border border-cyan-500 px-6 py-3 font-medium transition hover:bg-cyan-50 dark:border-cyan-400 dark:hover:bg-cyan-400/10"
+              className="rounded-lg border border-slate-300 bg-white px-6 py-3 font-medium text-slate-900 shadow-sm transition hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
             >
               LinkedIn
             </a>
@@ -61,7 +61,7 @@ export default function Hero() {
             <a
               href={hero.resumeUrl}
               download
-              className="rounded-lg border border-cyan-500 px-6 py-3 font-medium transition hover:bg-cyan-50 dark:border-cyan-400 dark:hover:bg-cyan-400/10"
+              className="rounded-lg border border-slate-300 bg-white px-6 py-3 font-medium text-slate-900 shadow-sm transition hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
             >
               Download Resume
             </a>
