@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+/* next-themes toggles this class on <html>; Tailwind v4 otherwise uses the OS color scheme. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Keep production scanning explicit for the App Router and shared components. */
+@source "../app/**/*.{ts,tsx}";
+@source "../components/**/*.{ts,tsx}";
+@source "../pages/**/*.{ts,tsx}";
+
 :root {
   --background: #050816;
   --foreground: #ffffff;
@@ -26,16 +34,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   transition: background-color 180ms ease, color 180ms ease;
-}
-
-main,
-section {
-  color: #0f172a;
-}
-
-.dark main,
-.dark section {
-  color: #f1f5f9;
 }
 
 html {

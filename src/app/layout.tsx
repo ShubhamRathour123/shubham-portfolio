@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-[#050816] dark:text-slate-100">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <SiteChrome>{children}</SiteChrome>
           <CustomCursor />
