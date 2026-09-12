@@ -146,7 +146,7 @@ I'm open to frontend roles, contract work, and freelance projects in Dubai and r
 | | |
 |---|---|
 | 📧 | [rathishubham641@gmail.com](mailto:rathishubham641@gmail.com) |
-| 📱 | +971 55 306 2362 |
+| 📱 | +971569156739 |
 | 💼 | [linkedin.com/in/shubhamrathour](https://linkedin.com/in/shubhamrathour) |
 | 🌐 | [shubham-portfolio-mocha-one.vercel.app](https://shubham-portfolio-mocha-one.vercel.app/) |
 | 📍 | Dubai, UAE · Valid residence visa · Available immediately |
