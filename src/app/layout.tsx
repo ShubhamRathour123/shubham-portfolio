@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import SiteChrome from "@/components/site-chrome";
+import CustomCursor from "@/components/CustomCursor";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
@@ -21,10 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <SiteChrome>{children}</SiteChrome>
-        <Toaster richColors position="top-right" />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <SiteChrome>{children}</SiteChrome>
+          <CustomCursor />
+          <Toaster richColors position="top-right" />
+        </ThemeProvider>
       </body>
     </html>
   );

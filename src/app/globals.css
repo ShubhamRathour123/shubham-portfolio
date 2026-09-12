@@ -3,6 +3,13 @@
 :root {
   --background: #050816;
   --foreground: #ffffff;
+  color-scheme: dark;
+}
+
+.light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  color-scheme: light;
 }
 
 body {
@@ -29,4 +36,11 @@ html {
 
 .glow {
   box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
+}
+
+@media (pointer: fine) {
+  .has-custom-cursor,
+  .has-custom-cursor * {
+    cursor: none !important;
+  }
 }
