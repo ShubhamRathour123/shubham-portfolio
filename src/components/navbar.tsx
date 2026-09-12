@@ -9,7 +9,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="fixed top-0 left-0 z-50 w-full border-b border-slate-200/90 bg-white/90 text-slate-900 shadow-sm shadow-slate-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-[#050816]/80 dark:text-white dark:shadow-none"
+      className="fixed top-0 left-0 z-50 w-full border-b border-slate-300 bg-white/95 text-slate-900 shadow-sm shadow-slate-900/5 backdrop-blur-xl dark:border-slate-700 dark:bg-[#050816]/95 dark:text-slate-100 dark:shadow-none"
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold gradient">

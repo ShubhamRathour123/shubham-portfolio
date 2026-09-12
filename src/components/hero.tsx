@@ -9,7 +9,7 @@ export default function Hero() {
   const { hero } = content;
 
   return (
-    <section className="flex min-h-screen items-center justify-center bg-slate-50 px-6 text-slate-900 dark:bg-transparent dark:text-slate-100">
+    <section className="flex min-h-screen items-center justify-center bg-slate-50 px-6 text-slate-900 dark:bg-[#050816] dark:text-slate-100">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
