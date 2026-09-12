@@ -3,12 +3,20 @@
 :root {
   --background: #050816;
   --foreground: #ffffff;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-strong: #070b1c;
+  --border: rgba(255, 255, 255, 0.1);
+  --muted: #9ca3af;
   color-scheme: dark;
 }
 
 .light {
   --background: #f8fafc;
   --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-strong: #f1f5f9;
+  --border: #e2e8f0;
+  --muted: #475569;
   color-scheme: light;
 }
 
@@ -16,6 +24,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   overflow-x: hidden;
+  transition: background-color 180ms ease, color 180ms ease;
 }
 
 html {
@@ -36,6 +45,14 @@ html {
 
 .glow {
   box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
+}
+
+.light .glow {
+  box-shadow: 0 14px 38px rgba(8, 145, 178, 0.18);
+}
+
+.light .gradient {
+  background-image: linear-gradient(to right, #0891b2, #4f46e5, #0891b2);
 }
 
 @media (pointer: fine) {
